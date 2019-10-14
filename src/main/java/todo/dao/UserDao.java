@@ -27,7 +27,7 @@ public class UserDao {
                 .password("janusz")
                 .build();
         UserEntity user1 = UserEntity.builder()
-                .login("grażyna")
+                .login("grazyna")
                 .email("grażyna@grażyna.pl")
                 .password("grażyna")
                 .build();

@@ -18,9 +18,7 @@
         <label for="pwd">Password:</label>
         <input type="password" class="form-control" name="password" id="pwd">
     </div>
-    <div class="checkbox">
-        <label><input type="checkbox">Remember me</label>
-    </div>
+
     <button type="submit" class="btn btn-default">Log in</button>
 </form>
 

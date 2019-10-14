@@ -3,6 +3,7 @@ package todo.service.authentication;
 import todo.dao.UserDao;
 import todo.entity.UserEntity;
 
+import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 
 public class AuthenticationService {
@@ -22,6 +23,10 @@ public class AuthenticationService {
     public boolean isAuthenticated (HttpServletRequest request) {
         String login = (String) request.getSession().getAttribute("login");
         return login !=null && !login.isEmpty();
+    }
+
+    public void logout(HttpServletRequest request){
+        request.getSession().setAttribute("login", null);
     }
 
     public static String getUserLogin(HttpServletRequest request){

@@ -9,6 +9,10 @@
 </head>
 <body>
 
+<form action="/to-do/logout" method="get">
+    <button type="submit" class="btn btn-success" name="logout">Logout</button>
+</form>
+
 <div class="container">
 
     <table class="table table-striped">
