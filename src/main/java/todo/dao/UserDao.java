@@ -14,7 +14,7 @@ public class UserDao {
 
     }
 
-    public boolean addUser(UserEntity userEntity) {
+    public static boolean addUser(UserEntity userEntity) {
         return users.add(userEntity);
     }
 

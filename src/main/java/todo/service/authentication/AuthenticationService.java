@@ -3,11 +3,10 @@ package todo.service.authentication;
 import todo.dao.UserDao;
 import todo.entity.UserEntity;
 
-import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 
 public class AuthenticationService {
-    UserDao userDao = new UserDao();
+    private UserDao userDao = new UserDao();
 
     public boolean authentication (HttpServletRequest request){
         String login = request.getParameter("login");
